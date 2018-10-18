@@ -202,8 +202,8 @@ ul.services-nav a {
 /* Fonts */
 
 @font-face {
-    font-family: 'Gidole';
-    src: url('../fonts/gidole-regular');
-    font-family: roboto;
-    src: url('../fonts/roboto-regular');
+    font-family: "Gidole";
+    src: url('https://github.com/larsenwork/Gidole/blob/master/Resources/GidoleFont/Gidole-Regular.ttf');
+    font-family: "Roboto";
+    src: url('../fonts/roboto-regular.ttf');
 }

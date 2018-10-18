@@ -110,9 +110,9 @@ ul.services-nav a {
 }
 
 .original-logo {
-	width: 70px;
-	padding-top: 40px;
-	align-items: center;
+    width: 90px;
+    padding-top: 30px;
+    align-items: right;
 }
 
 .contact-details li.chat {
@@ -125,13 +125,14 @@ ul.services-nav a {
 	color: #1fa6cd;
 	width: 100%;
 	text-align: left;
-	line-height: 1.4;
+	font-size: 15px
 
 }
 
 .contact-details i {
 	color: #1fa6cd;
 	margin-right: 10px;
+	font-size: 15px;
 }
 
 /* Intro Section Styling */
@@ -142,7 +143,7 @@ ul.services-nav a {
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding: 100px 0;
-	margin-top: 150px;
+
 
 }
 
@@ -196,4 +197,13 @@ ul.services-nav a {
 	text-align: center;
 	text-transform: uppercase;
 	text-decoration: underline;
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: "Gidole";
+    src: url('https://github.com/larsenwork/Gidole/blob/master/Resources/GidoleFont/Gidole-Regular.ttf');
+    font-family: "Roboto";
+    src: url('../fonts/roboto-regular.ttf');
 }

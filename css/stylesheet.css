@@ -198,3 +198,12 @@ ul.services-nav a {
 	text-transform: uppercase;
 	text-decoration: underline;
 }
+
+/* Fonts */
+
+@font-face {
+    font-family: 'Gidole';
+    src: url('../fonts/gidole-regular');
+    font-family: roboto;
+    src: url('../fonts/roboto-regular');
+}

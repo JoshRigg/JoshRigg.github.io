@@ -30,12 +30,21 @@ body {
 	line-height: 1.4;
 }
 
+@media screen and (max-width: 600px) {
+	.hero h1 {
+	font-size: 40px;
+	line-height: 1.4;
+}
+}
+
 .hero p {
 
 }
 
 #services {
 }
+
+@media screen and (min-width: 600px) {
 
 header {
 	position: absolute;
@@ -44,11 +53,26 @@ header {
 	left: 0;
 	padding-top: 20px;
 }
+}
+@media screen and (max-width: 600px) {
 
+	div.header { 
+		position: absolute;
+		top: 0;
+		width: 100%;
+		left: 0;
+		padding-top: 20px;
+		visibility: hidden;
+	}
+	
+}
 
+@media screen and (max-width: 600px) {
 ul {
 	color: white; font-family: armata; 
 	list-style-type: none;
+		visibility: hidden;
+}
 }
 
 li {
@@ -69,9 +93,53 @@ li a {
 	text-transform: uppercase;
 }
 
+@media screen and (max-width: 600px) {
+
+.topnav {
+  overflow: hidden;
+  background-color: #353535;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: transparent;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: transparent;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #236b94;
+  color: white;
+}
+
+}
+
 h1 {
 	color: white; font-family: armata;
-	font-size: 24px;
 }
 
 p {
@@ -88,8 +156,18 @@ i {
 
 }
 
+
+
 .logo {
 	width: 70px;
+}
+
+
+@media screen and (max-width: 600px) {
+	.logo {
+	width: 15%;
+			visibility: hidden;
+}
 }
 
 .scroll-down {
@@ -193,7 +271,8 @@ ul.services-nav a {
 	font-size: 18px;
 	font-weight: 300;
 	text-align: left;
-	line-height: 30px
+	line-height: 30px;
+	margin: auto;
 
 }
 
@@ -256,6 +335,15 @@ table {
 
 }
 
+/* About Section */
+.about-section h3 {
+	display: table;
+	margin: auto;
+}
+
+
+
+
 /* Footer Section */
 
 .footer {
@@ -274,6 +362,8 @@ table {
 	font-size: 48px;
 	text-align: center;
 	text-transform: uppercase;
+	display: table;
+	margin: auto;
 }
 
 .footer h2 {
@@ -288,11 +378,13 @@ table {
 }
 
 .accreditations ul {
-	    color: white;
-    font-family: armata;
-    list-style-type: none;
-    margin: auto;
-    display: table;
+	padding-top: 30px;
+	padding-bottom:; 30px;
+	color: white;
+	font-family: armata;
+	list-style-type: none;
+	margin: auto;
+	display: table;
 }
 
 /* Newsletter */
@@ -304,9 +396,9 @@ table {
 	background-size: cover;
 	height: 500px;
 	float: left;
-    width: 100%;
-    padding: 40px 0;
-    border-bottom: 1px solid #333;
+	width: 100%;
+	padding: 40px 0;
+	border-bottom: 1px solid #333;
 }
 
 .newsletter h2 {
@@ -322,58 +414,64 @@ table {
 	font-size: 20px;
 	text-align: center;
 	padding: 10px 5px;
-    margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 .newsletter form input {
-    float: left;
-    padding: 10px 5px;
-    margin-bottom: 20px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
+	float: left;
+	padding: 10px 5px;
+	margin-bottom: 20px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
 }
 
 .newsletter input {
-    margin-left: 1090px;
-    float: left; 
-    padding: 15px 30px;
-    border: 1px solid #ccc;
-    text-align: center;
-    margin-right: 20px; 
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px; 
-    border-radius: 5px; 
-    width: 10%;
-    color: #999;
-    margin-bottom: 0;
+	margin-left: 1090px;
+	float: left; 
+	padding: 15px 30px;
+	border: 1px solid #ccc;
+	text-align: center;
+	margin-right: 20px; 
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px; 
+	border-radius: 5px; 
+	width: 10%;
+	color: #999;
+	margin-bottom: 0;
 }
 
 .social ul {
-    margin: 0 0 20px 0;
-    padding: 0;
-    list-style: none;
+	margin: 0 0 20px 0;
+	padding: 0;
+	list-style: none;
 }
 
-section.social ul li a {
-    display: table;
-    margin: auto;
-    text-align: center;
-    color: #589dc1;
+section.social ul {
+	display: table;
+	margin: auto;
+}
+
+section.social li {
+	text-align: center;
+}
+
+section.social a {
+	color: #589dc1;
 
 }
 
 li span.fab {
-    width: 100%;
-    height: 30px;
-    margin-left: 30px;
+	width: 100%;
+	height: 30px;
+	margin-left: 30px;
 }
 
 section.social ul li a span + span {
-    margin-left: 10px;
+	margin-left: 10px;
 }
 
 section.social ul li a span {
-    margin: 0 10px 0 0;
-    vertical-align: middle;
+	margin: 0 10px 0 0;
+	vertical-align: middle;
 }

@@ -18,7 +18,22 @@
 <body>
 	<header>
 
-		<div class="grid-container">
+		<!-- Mobile Navigation Menu -->
+		<div class="topnav hide-for-large">
+			<a href="#home" class="active"><img class="logo" src="assets/logo.png" alt="Meta Logo"></a>
+			<!-- Navigation links (hidden by default) -->
+			<div id="myLinks">
+				<a href="#news">Services</a>
+				<a href="#contact">Contact</a>
+				<a href="#about">About</a>
+			</div>
+			<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</div>
+
+		<div class="grid-container show-for-large">
 			<div class="grid-x grid-padding-x">
 				<div class="large-6 cell">
 					<a href="#home">
@@ -327,18 +342,26 @@
 				</div>
 			</div>
 
-			<div class="about-section">
-				<div class="grid-container">
-					<div class="grid-x grid-padding-x">
-						<div class="large-12 cell">
-							<h3><i class="fas fa-chart-line"></i>Search Engine Optimisation</h3>
+
+			<div id="about" class="about-section">
+				<div class="about-section">
+					<div class="grid-container">
+						<div class="grid-x grid-padding-x">
+							<div class="large-12 cell">
+								<h3><i class="fas fa-chart-line"></i>Why Choose <strong>META?</strong></h3>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="grid-container">
-					<div class="grid-x grid-padding-x">
-						<div class="large-12 cell">
-							<p class="service-section">Having a mobile-friendly website and social media presence is not enough. To really promote your business online you'll need a strategy to improve your brand's visibility and organic search engine performance. Work with META on an SEO campaign to deliver measurable results for your business.</p>
+					<div class="grid-container">
+						<div class="grid-x grid-padding-x">
+							<div class="large-12 cell">
+								<p class="about-section">We're a fresh digital agency with the right ideas to help your business succeed online. With over 20 years combined experience in web design, development and the search industry, we are well placed to:
+
+									Help you launch a new bespoke website for your business
+									Re-develop your existing site with a mobile friendly design
+									Grow your retail business with an ecommerce solution
+								Whether you're a local start-up or a nationally recognised brand, we'd love to hear more about your next project. Get in touch today..</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -371,7 +394,7 @@
 				</section>
 
 				<div class="newsletter"> - <!-- Remove height from css -->
-					
+
 					<!-- wrap in grid -->
 
 					<div class="contain">
@@ -402,28 +425,28 @@
 
 				<section class="social">
 
-								<div class="contain">
-									<link itemprop="url" rel="author" href="https://www.meta.co.uk">
-									<ul>
-										<li><a itemprop="sameAs" href="https://twitter.com/justsimplymeta" title="Follow META on Twitter" target="blank"><span class="fab fa-twitter"></span>Twitter</a></li> -  <!-- Remove all CSS from li & a, Add colour to a, text align center li --> 
-										<li><a itemprop="sameAs" href="https://www.facebook.com/simplymeta" title="Like META on Facebook" target="blank"><span class="fab fa-facebook"></span>Facebook</a></li>
-										<li><a itemprop="sameAs" href="https://www.linkedin.com/company/simply-meta-limited" title="Follow META on LinkedIn" target="blank"><span class="fab fa-linkedin"></span>LinkedIn</a></li>
-										<li><a itemprop="sameAs" href="https://www.instagram.com/simplymeta/" title="Follow META on Instagram" target="blank"><span class="fab fa-instagram"></span>Instagram</a></li>                        
-										<li><a itemprop="sameAs" href="https://uk.pinterest.com/simplymeta/" title="Follow META on Pinterest" target="blank"><span class="fab fa-pinterest-p"></span>Pinterest</a></li>                        
-										<li class="last"><a itemprop="sameAs" href="https://plus.google.com/+simplymetacouk" title="Follow META on Google+" rel="publisher" target="blank"><span class="fab fa-google-plus"></span>Google+</a></li>
+					<div class="contain">
+						<link itemprop="url" rel="author" href="https://www.meta.co.uk">
+						<ul>
+							<li><a itemprop="sameAs" href="https://twitter.com/justsimplymeta" title="Follow META on Twitter" target="blank"><span class="fab fa-twitter"></span>Twitter</a></li> -  <!-- Remove all CSS from li & a, Add colour to a, text align center li --> 
+							<li><a itemprop="sameAs" href="https://www.facebook.com/simplymeta" title="Like META on Facebook" target="blank"><span class="fab fa-facebook"></span>Facebook</a></li>
+							<li><a itemprop="sameAs" href="https://www.linkedin.com/company/simply-meta-limited" title="Follow META on LinkedIn" target="blank"><span class="fab fa-linkedin"></span>LinkedIn</a></li>
+							<li><a itemprop="sameAs" href="https://www.instagram.com/simplymeta/" title="Follow META on Instagram" target="blank"><span class="fab fa-instagram"></span>Instagram</a></li>                        
+							<li><a itemprop="sameAs" href="https://uk.pinterest.com/simplymeta/" title="Follow META on Pinterest" target="blank"><span class="fab fa-pinterest-p"></span>Pinterest</a></li>                        
+							<li class="last"><a itemprop="sameAs" href="https://plus.google.com/+simplymetacouk" title="Follow META on Google+" rel="publisher" target="blank"><span class="fab fa-google-plus"></span>Google+</a></li>
 
-									</ul>
-								</div>
-							</div>
-						</div>
+						</ul>
 					</div>
-				</section>
+				</div>
+			</div>
+		</div>
+	</section>
 
-			</footer>
+</footer>
 
-			<script src="js/vendor/jquery.js"></script>
-			<script src="js/vendor/what-input.js"></script>
-			<script src="js/vendor/foundation.js"></script>
-			<script src="js/app.js"></script>
-		</body>
-		</html>
+<script src="js/vendor/jquery.js"></script>
+<script src="js/vendor/what-input.js"></script>
+<script src="js/vendor/foundation.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
